@@ -1,7 +1,6 @@
 /bin/
 /RemoteSystemsTempFiles/
 .metadata/
-.settings
 .DS_Store
 src/.DS_Store
 src/edu/.DS_Store
