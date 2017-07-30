@@ -18,10 +18,12 @@ public class TwoSumPairs {
 		
 	}
 
+	@SuppressWarnings("unchecked")
 	private static void twoSum(int[] arr, int target) {
 		if(arr.length < 2)
 			return;
 		
+		@SuppressWarnings("rawtypes")
 		Set set = new HashSet(arr.length);
 		
 		for(int item : arr){

@@ -39,8 +39,9 @@ class Node {
 class LinkedList {
 
 	private Node head;
-	private int data;
 	private int length = 0;
+	@SuppressWarnings("unused")
+	private int data;
 	
 	public LinkedList(){
 		head = null;

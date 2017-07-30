@@ -28,7 +28,8 @@ public class ReverseString {
 	public static void main(String[] args){
 		//String input = "JAVA";
 		String input = "coding is fun";
+		System.out.println("string: " +input);
 		String reverse = reverseString(input);
-		System.out.println(reverse);
+		System.out.println("reversed string:" +reverse);
 	}
 }

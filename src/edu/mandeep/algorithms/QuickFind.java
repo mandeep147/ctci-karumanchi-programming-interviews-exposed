@@ -8,6 +8,7 @@ public class QuickFind {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		int numberOfNodes = sc.nextInt();
 		int numberOfQueries = sc.nextInt();

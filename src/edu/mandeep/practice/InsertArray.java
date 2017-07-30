@@ -8,28 +8,29 @@ public class InsertArray {
 
 	public static void main(String[] args) {
 
-		 Scanner in = new Scanner(System.in);
-	        String _input;
+		 @SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);
+	        String input;
 	        try {
-	            _input = in.nextLine();
+	            input = in.nextLine();
 	        } catch (Exception e) {
-	            _input = null;
+	            input = null;
 	        }
 	        String arr[] = new String[10];
 	       // for(int i = 0; i < 10; i++){
-	        	insertIntoSortedArray(arr, _input);
+	        	insertIntoSortedArray(arr, input);
 	        	System.out.println(Arrays.toString(arr));
-	        	_input = in.nextLine();
-	        	insertIntoSortedArray(arr, _input);
+	        	input = in.nextLine();
+	        	insertIntoSortedArray(arr, input);
 	        	System.out.println(Arrays.toString(arr));
-	        	_input = in.nextLine();
-	        	insertIntoSortedArray(arr, _input);
+	        	input = in.nextLine();
+	        	insertIntoSortedArray(arr, input);
 	        	System.out.println(Arrays.toString(arr));
-	        	_input = in.nextLine();
-	        	insertIntoSortedArray(arr, _input);
+	        	input = in.nextLine();
+	        	insertIntoSortedArray(arr, input);
 	        	System.out.println(Arrays.toString(arr));
-	        	_input = in.nextLine();
-	        	insertIntoSortedArray(arr, _input);
+	        	input = in.nextLine();
+	        	insertIntoSortedArray(arr, input);
 	        	System.out.println(Arrays.toString(arr));
 
 	}

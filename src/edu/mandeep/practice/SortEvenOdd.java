@@ -5,10 +5,6 @@
 */
 package edu.mandeep.practice;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class SortEvenOdd {
 	
 	public static void sortEvenOdd(int arr[]){

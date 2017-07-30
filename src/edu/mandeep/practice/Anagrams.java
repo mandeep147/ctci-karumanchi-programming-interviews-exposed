@@ -1,3 +1,4 @@
+///generate anagrams of a string
 package edu.mandeep.practice;
 public class Anagrams { 
 	
