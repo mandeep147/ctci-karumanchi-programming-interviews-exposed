@@ -2,10 +2,10 @@ package edu.mandeep.practice;
 
 public class ReverseString {
 	
-	/*static void reverseString(String input){
+	static void reverseStringDirect(String input){
 		
-		 * by converting into  char array
-		 * 
+		 /* by converting into  char array
+		 */
 		char[] inputArr = input.toCharArray();
 		
 		for( int i = inputArr.length - 1; i >= 0; i-- ){
@@ -16,7 +16,7 @@ public class ReverseString {
 		for(int i = input.length() - 1; i >= 0 ; i--){
 			System.out.print(input.charAt(i));
 		}
-	}*/
+	}
 	
 	//using recursion
 	static String reverseString(String input){
@@ -31,5 +31,6 @@ public class ReverseString {
 		System.out.println("string: " +input);
 		String reverse = reverseString(input);
 		System.out.println("reversed string:" +reverse);
+		reverseStringDirect(input);
 	}
 }
