@@ -21,6 +21,8 @@ public class SizeOfBinaryTree {
 		TreeNode root = CreateTree.createTree();
 		System.out.println(sizeOfTreeRecursive(root));
 		System.out.println(sizeOfTree(root));
+		
+		System.out.println(sum(root));
 	}
 	
 	private static int sizeOfTreeRecursive(TreeNode root){
@@ -44,5 +46,14 @@ public class SizeOfBinaryTree {
 				que.offer(current.getRight());
 		}
 		return count;
+	}
+	
+	private static int sum(TreeNode root){
+		int leftCount = 0, rightCount = 0;
+		if(root.left != null)
+			leftCount += sum(root.left);
+		if(root.right != null)
+			rightCount += sum(root.right);
+		return leftCount + rightCount + root.data;		
 	}
 }
