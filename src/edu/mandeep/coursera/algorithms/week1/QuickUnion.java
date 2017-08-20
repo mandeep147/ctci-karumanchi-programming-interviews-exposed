@@ -1,13 +1,10 @@
-package edu.mandeep.algorithms;
+package edu.mandeep.coursera.algorithms.week1;
 
 import java.util.Scanner;
 
 public class QuickUnion {
-
 	static int arr[];
-	
 	public static void main(String[] args) {
-		
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);
 		int numberOfNodes = sc.nextInt();
@@ -21,7 +18,6 @@ public class QuickUnion {
 		for (int i = 0; i < numberOfNodes; i++){
 			arr[i] = i;
 		}
-		
 		
 		while(numberOfQueries > 0){
 			int p = sc.nextInt();

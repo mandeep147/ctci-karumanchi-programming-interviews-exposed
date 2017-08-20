@@ -1,4 +1,4 @@
-package week2;
+package edu.mandeep.coursera.AlgortihmsToolBox.week2;
 import java.util.Scanner;
 
 /**

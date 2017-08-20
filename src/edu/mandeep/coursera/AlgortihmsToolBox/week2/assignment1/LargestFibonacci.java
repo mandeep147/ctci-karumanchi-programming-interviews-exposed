@@ -1,7 +1,7 @@
 /**
  * 
  */
-package week2.assignment1;
+package edu.mandeep.coursera.AlgortihmsToolBox.week2.assignment1;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

@@ -1,7 +1,5 @@
-package week2;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+package edu.mandeep.coursera.AlgortihmsToolBox.week2;
+
 import java.util.Scanner;
 
 /**
