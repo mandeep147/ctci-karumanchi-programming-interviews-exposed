@@ -8,7 +8,6 @@ package edu.mandeep.ctci;
  *
  */
 public class IsUnique {
-
 	/**
 	 * @param args
 	 */
@@ -23,14 +22,12 @@ public class IsUnique {
 	}
 	//assumption: ASCII string
 	static boolean isUniqueChars(String str){
-		
 		//if length of string is more than 128 it has duplicate values
 		if(str.length() > 128)
 			return false;
 		
 		//array of 128 chars
 		boolean[] flag = new boolean[128];
-		
 		for(int i = 0; i < str.length(); i++){
 			int val = str.charAt(i);
 			
@@ -38,9 +35,7 @@ public class IsUnique {
 			if(flag[val])
 				return false;
 			flag[val] = true;
-		}
-		
+		}	
 		return true;
 	}
-
 }

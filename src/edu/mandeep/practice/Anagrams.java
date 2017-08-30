@@ -3,8 +3,7 @@ package edu.mandeep.practice;
 public class Anagrams { 
 	
 	public static void main(String args[]) { 
-		permutation("abc"); 	
-		
+		permutation("abc"); 		
 	} 
 	
 	public static void permutation(String input){

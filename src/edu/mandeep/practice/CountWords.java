@@ -31,9 +31,9 @@ public class CountWords {
 		System.out.println(countMap);
 	}
 	
-	/*public static void main(String[] args){
+	public static void main(String[] args){
 		
 		String input = "coding is fun is coding";
 		repeatedWord(input);
-	}*/
+	}
 }
