@@ -5,7 +5,7 @@ import java.util.Queue;
 
 public class LevelOrderTraversal {
 
-	private static void LevelOrder(TreeNode root) {
+	static void LevelOrder(TreeNode root) {
 		if(root == null)
 			return;
 

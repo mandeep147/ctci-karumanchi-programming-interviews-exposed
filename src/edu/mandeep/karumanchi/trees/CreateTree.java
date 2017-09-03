@@ -1,5 +1,7 @@
 package edu.mandeep.karumanchi.trees;
 
+import java.util.Scanner;
+
 public class CreateTree {
 	public static TreeNode createTree(){
 		TreeNode root = new TreeNode(10);

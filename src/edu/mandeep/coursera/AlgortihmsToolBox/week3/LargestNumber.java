@@ -1,9 +1,6 @@
-/**
- * update required: greedy approach to work with 2 or more digit numbers as well
- */
 package edu.mandeep.coursera.AlgortihmsToolBox.week3;
-
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * What is the largest number that consists of digits 3, 9, 5, 9, 7, 1? Use all digits.
@@ -17,22 +14,29 @@ public class LargestNumber {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int a[] = {3, 20, 5, 9, 7, 1};
-		
-		//largestNumber(a);
+		int a[] = {3, 3, 5, 9, 7, 1};
 		findLargestDigit(a);
 	}
-
-	private static void largestNumber(int[] arr) {
-		StringBuilder sb = new StringBuilder();
-		Arrays.sort(arr);
-		for(int i = arr.length - 1; i >=0; i--){
-			System.out.print(arr[i]);
-		}
-	}
-	
 	
 	private static void findLargestDigit(int[] arr){
+		String[] newArr = new String[arr.length];
+		for(int i = 0; i < arr.length; i++)
+			newArr[i] = String.valueOf(arr[i]);
 		
+		Arrays.sort(newArr, new Comparator<String>(){
+			public int compare(String a, String b){
+				return (b + a).compareTo(a + b);
+			}
+		});
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(String str : newArr)
+			sb.append(str);
+		
+		while(sb.charAt(0) == '0' && sb.length() > 1)
+			sb.deleteCharAt(0);
+		
+		System.out.println(sb.toString());
 	}
 }
