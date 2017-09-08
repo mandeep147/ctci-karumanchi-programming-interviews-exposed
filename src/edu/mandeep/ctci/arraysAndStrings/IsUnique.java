@@ -1,7 +1,7 @@
 /**
  * Determine if string has all unique characters
  */
-package edu.mandeep.ctci;
+package edu.mandeep.ctci.arraysAndStrings;
 
 /**
  * @author mandeep

@@ -1,7 +1,8 @@
 /*
  * implement stack using arrrays
  * 
-*/package edu.mandeep.karumanchi.stacks;
+*/
+package edu.mandeep.karumanchi.stacks;
 
 public class StackArray {
 	

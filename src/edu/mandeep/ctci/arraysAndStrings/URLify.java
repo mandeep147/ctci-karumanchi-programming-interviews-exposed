@@ -4,7 +4,7 @@
  * input: "Mr John SMith", 13
  * output: "Mr%20John%20Smith"
  */
-package edu.mandeep.ctci;
+package edu.mandeep.ctci.arraysAndStrings;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

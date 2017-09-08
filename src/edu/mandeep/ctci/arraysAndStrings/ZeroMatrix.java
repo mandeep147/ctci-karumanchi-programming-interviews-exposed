@@ -1,7 +1,7 @@
 /**
  * 
  */
-package edu.mandeep.ctci;
+package edu.mandeep.ctci.arraysAndStrings;
 
 /**
  * @author mandeep

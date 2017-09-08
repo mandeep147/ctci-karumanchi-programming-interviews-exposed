@@ -1,7 +1,7 @@
 /**
  * 1.2 Check Permuattion: if one string is permutation of the other string?
  */
-package edu.mandeep.ctci;
+package edu.mandeep.ctci.arraysAndStrings;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
