@@ -1,5 +1,6 @@
 /**
- * 
+ * Problem 1.8: Zero Matrix
+ * Write an algorithm such that if an element in an M*N matrix is 0, its row and coulmn are set to 0.
  */
 package edu.mandeep.ctci.arraysAndStrings;
 
@@ -22,6 +23,11 @@ public class ZeroMatrix {
 			};
 		zero.setZeros(matrix);
 	}
+	
+	/**
+	 * Complexity, Space: O(m*n)
+	 * @param matrix
+	 */
 	private void setZeros(int[][]matrix){
 		boolean[] row = new boolean[matrix.length];
 		boolean[] column = new boolean[matrix[0].length];

@@ -1,4 +1,5 @@
 /**
+ * Problem 1.1: is Unique
  * Determine if string has all unique characters
  */
 package edu.mandeep.ctci.arraysAndStrings;
@@ -20,7 +21,14 @@ public class IsUnique {
 		System.out.println("String "+ str1 +"contains unique characters: "+ isUniqueChars(str1));
 		System.out.println("String "+ str2 +"contains unique characters: "+ isUniqueChars(str2));
 	}
-	//assumption: ASCII string
+
+	/**
+	 * Complexity: O(n)
+	 * Space: O(1)
+	 * assumption: ASCII string
+	 * @param str
+	 * @return
+	 */
 	static boolean isUniqueChars(String str){
 		//if length of string is more than 128 it has duplicate values
 		if(str.length() > 128)
