@@ -20,7 +20,9 @@ public class TwoSum {
 		for(int i = 0; i < arr.length; i++){
 			int diff = sum - arr[i];
 			if(twoSumMap.containsKey(diff)){
-				return new int[] {twoSumMap.get(diff), i};
+				return new int[] {
+						twoSumMap.get(diff), i
+					};
 			}
 			twoSumMap.put(arr[i], i);
 		}

@@ -20,13 +20,15 @@ public class AlternateSorting {
 		Collections.sort(input);
 		int lastIndex = input.size() - 1;
 		
-		ArrayList<Integer> output = new ArrayList<>(lastIndex);
-		
-		for(int i = 0; i <= lastIndex / 2; i++){
+		ArrayList<Integer> output = new ArrayList<>(input.size());
+		int i;
+		for(i = 0; i <= lastIndex / 2; i++){
 			output.add(input.get(lastIndex));
 			output.add(input.get(i));
 			lastIndex--;
 		}
+		if(i == lastIndex)
+			output.add(input.get(i));
 		
 		System.out.println(output);
 	}

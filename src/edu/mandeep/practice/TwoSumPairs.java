@@ -26,6 +26,7 @@ public class TwoSumPairs {
 		@SuppressWarnings("rawtypes")
 		Set set = new HashSet(arr.length);
 		
+		
 		for(int item : arr){
 			int diff = target - item;
 			
