@@ -27,6 +27,7 @@ public class MaximumPairwiseProduct {
 			arr[i] = sc.nextInt();
 		}
 		getMaxProduct(arr);
+		sc.close();
 	}
 	
 	public static void getMaxProduct(Integer[] arr){

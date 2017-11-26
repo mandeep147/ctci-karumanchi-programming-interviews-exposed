@@ -7,7 +7,6 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Toolkit;
-import java.awt.geom.AffineTransform;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -18,6 +17,10 @@ import javax.swing.JPanel;
  */
 public class RotateObject extends JPanel{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	Image image;
 	
 	/**

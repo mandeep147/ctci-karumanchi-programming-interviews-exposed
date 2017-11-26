@@ -3,16 +3,9 @@
  */
 package edu.mandeep.practice.extractZipFiles;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Enumeration;
 import java.util.zip.ZipEntry;
-import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
 
 /**
@@ -20,10 +13,6 @@ import java.util.zip.ZipInputStream;
  *
  */
 public class ExtractZipAndPrint {
-
-	private static ZipFile zip;
-	private static ZipFile zf;
-	private static BufferedReader br;
 
 	/**
 	 * @param args

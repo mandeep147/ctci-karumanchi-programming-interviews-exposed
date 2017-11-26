@@ -43,8 +43,6 @@ public class BinarySearchTree {
 	}
 	
 	public static void main(String[] args) {
-		BinarySearchTree tree = new BinarySearchTree();
 		
-		//tree.Insert(tree, 50);
 	}
 }

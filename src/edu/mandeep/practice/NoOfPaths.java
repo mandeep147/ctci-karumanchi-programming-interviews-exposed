@@ -22,6 +22,7 @@ public class NoOfPaths {
 		Scanner in = new Scanner(System.in);
 		int m = in.nextInt();
 		int n = in.nextInt();
+		in.close();
 		System.out.println(countPaths(m, n));
 		System.out.println(countPathsDP(m, n));
 	}

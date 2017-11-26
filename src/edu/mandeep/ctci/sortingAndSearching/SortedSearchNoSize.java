@@ -8,8 +8,6 @@
  */
 package edu.mandeep.ctci.sortingAndSearching;
 
-import java.util.List;
-
 /**
  * @author mandeep
  *

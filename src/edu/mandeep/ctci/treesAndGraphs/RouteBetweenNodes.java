@@ -15,6 +15,7 @@ public class RouteBetweenNodes {
 	private int v;
 	static LinkedList<Integer>[] adj;
 	
+	@SuppressWarnings("unchecked")
 	public RouteBetweenNodes(int v){
 		this.v = v;
 		adj = new LinkedList[v];
@@ -50,7 +51,6 @@ public class RouteBetweenNodes {
 	 * @return
 	 */
 	private boolean isReachable(int source, int dest) {
-		LinkedList<Integer> temp;
 		boolean[] visited = new boolean[v];
 		
 		LinkedList<Integer> queue = new LinkedList<Integer>();

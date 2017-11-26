@@ -35,6 +35,7 @@ public class KthLargestBST {
 		System.out.println("Enter value of k: ");
 		int k = in.nextInt();
 		
+		in.close();
 		//System.out.print("In-Order Traversal: ");
 		//TreeTraversalRecursive.InOrder(buildBST(arr));
 		TreeNode root = buildBST(arr);

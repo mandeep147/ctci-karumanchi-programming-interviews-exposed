@@ -15,10 +15,8 @@ public class LRUCacheDLL {
 
 	private DoublyLinkedlIst pageList;
 	private Map<Integer, Node> pageMap;
-	private final int cacheSize;
 
 	public LRUCacheDLL(int cacheSize){
-		this.cacheSize = cacheSize;
 		pageList = new DoublyLinkedlIst(cacheSize);
 		pageMap = new HashMap<Integer, Node>();
 	}

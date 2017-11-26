@@ -24,6 +24,7 @@ public class ValidateSudoku {
 		
 		System.out.println("Given sudoku soluntion is a ");
 		System.out.print(validateSudoku(board)?"Valid Solution":"Not a valid soltuion");
+		in.close();
 				
 	}
 	

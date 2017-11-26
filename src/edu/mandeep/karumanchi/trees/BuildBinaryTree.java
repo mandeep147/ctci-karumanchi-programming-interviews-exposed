@@ -35,7 +35,7 @@ public class BuildBinaryTree {
 			inorder[i] = in.nextInt();
 		
 		//buildTree(preorder, inorder);
-		
+		in.close();
 		System.out.print("Level-Order Traversal: ");
 		LevelOrderTraversal.LevelOrder(buildTree(preorder, inorder));
 		System.out.print("\nIn-Order Traversal: ");

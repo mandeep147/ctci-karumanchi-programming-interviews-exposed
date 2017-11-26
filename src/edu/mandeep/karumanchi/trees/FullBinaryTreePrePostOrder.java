@@ -38,6 +38,7 @@ public class FullBinaryTreePrePostOrder {
 		for(int i = 0; i < n; i++)
 			preorder[i] = in.nextInt();
 		
+		in.close();
 		System.out.print("In-Order Traversal: ");
 		TreeTraversalRecursive.InOrder(buildTree(postorder, preorder));
 	}

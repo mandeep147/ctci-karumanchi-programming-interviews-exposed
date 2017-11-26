@@ -14,6 +14,7 @@ public class ShellSort {
 	 * 
 	 * @param args
 	 */
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 		ShellSort sort = new ShellSort();
 		Comparable[] arr = {"do", "all", "three", "apple", "bat"};
@@ -25,6 +26,7 @@ public class ShellSort {
 		System.out.println(sort.isSorted(arr));
 	}
 	
+	@SuppressWarnings("rawtypes")
 	private void sort(Comparable[] arr) {
 		int n = arr.length;	
 		int h = 1; 
@@ -39,12 +41,14 @@ public class ShellSort {
 		}
 	}
 
+	@SuppressWarnings("rawtypes")
 	private void exch(Comparable[] a, int i, int min) {
 		Comparable swap = a[i];
 		a[i] = a[min];
 		a[min] = swap;
 	}
 
+	@SuppressWarnings("rawtypes")
 	private boolean isSorted(Comparable[] a){
 		for(int i = 0;  i < a.length; i++)
 			if(less(a[i], a[i+1]))
@@ -52,6 +56,7 @@ public class ShellSort {
 		return false;
 	}
 	
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	private boolean less(Comparable v, Comparable w) {
 		return v.compareTo(w) < 0;
 	}

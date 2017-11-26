@@ -18,6 +18,7 @@ public class BFS {
 	// array of lists for adjacency list representation
 	private static LinkedList<Integer> adj[];
 
+	@SuppressWarnings("unchecked")
 	public BFS(int v) {
 		this.v = v;
 		adj = new LinkedList[v];

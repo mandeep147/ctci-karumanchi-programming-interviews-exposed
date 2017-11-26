@@ -31,7 +31,6 @@ public class ModularInverse {
 		
 		int d = val[0];
 		int aa = val[1];
-		int b = val[2];
 		
 		if( d > 1){
 			System.out.println("no inverse exists for "+a);

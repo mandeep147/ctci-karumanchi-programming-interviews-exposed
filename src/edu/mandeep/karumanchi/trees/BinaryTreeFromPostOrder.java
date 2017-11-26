@@ -34,6 +34,7 @@ public class BinaryTreeFromPostOrder {
 		for(int i = 0; i < n; i++)
 			inorder[i] = in.nextInt();
 		
+		in.close();
 		System.out.print("Level-Order Traversal: ");
 		LevelOrderTraversal.LevelOrder(buildTree(postorder, inorder));
 		System.out.print("In-Order Traversal: ");

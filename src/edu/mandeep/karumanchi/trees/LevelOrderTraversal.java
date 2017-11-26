@@ -28,12 +28,13 @@ public class LevelOrderTraversal {
 	}
 
 	public static void main(String[] args){
-		TreeNode root = createTree();
+		TreeNode root = CreateTree.createTree();
 		System.out.print("Level-Order Traversal: ");
 		LevelOrder(root);
 	}	
 
-	public static TreeNode createTree(){
+	/**
+	  public static TreeNode createTree(){
 		TreeNode root = new TreeNode(1);
 		TreeNode node2=new TreeNode(2);  
 		TreeNode node3=new TreeNode(3);  
@@ -53,4 +54,5 @@ public class LevelOrderTraversal {
 
 		return root;
 	}
+	*/
 }
