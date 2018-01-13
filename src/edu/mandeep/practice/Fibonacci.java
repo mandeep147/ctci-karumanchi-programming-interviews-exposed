@@ -122,6 +122,7 @@ public class Fibonacci {
 	 * @param a
 	 * @param n
 	 */
+	@SuppressWarnings("unused")
 	private static void powerOptimized(int[][] a, int n){
 		if(n == 0 || n == 1)
 			return;

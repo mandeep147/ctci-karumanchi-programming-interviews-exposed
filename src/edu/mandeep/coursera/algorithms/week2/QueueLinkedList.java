@@ -10,6 +10,7 @@ import java.util.EmptyStackException;
  */
 public class QueueLinkedList<T> {
 
+	@SuppressWarnings("hiding")
 	class Node<T>{
 		private Node<T> next;
 		private T data;
@@ -42,6 +43,7 @@ public class QueueLinkedList<T> {
 			head = end;
 	}
 	
+	@SuppressWarnings("unused")
 	private boolean isEmpty() {
 		return head == null;
 	}

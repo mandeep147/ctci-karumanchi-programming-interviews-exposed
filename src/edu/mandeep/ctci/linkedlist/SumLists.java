@@ -22,13 +22,13 @@ public class SumLists {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Node start = new Node(7);
-		start.appendToTail(1);
-		start.appendToTail(6);
+		Node start = new Node(2);
+		start.appendToTail(4);
+		start.appendToTail(3);
 		
 		Node second = new Node(5);
-		second.appendToTail(9);
-		second.appendToTail(2);
+		second.appendToTail(6);
+		second.appendToTail(4);
 		
 		Node.printList(start);
 		Node.printList(second);
@@ -57,7 +57,7 @@ public class SumLists {
 		
 		result.data = value % 10; 
 		
-		if(l1 != null || l1 != null){
+		if(l1 != null || l2 != null){
 			Node more = addLists(l1 == null? null : l1.next, l2 == null? null : l2.next, value >= 10 ? 1 : 0);
 			result.next = more;
 		}
