@@ -3,6 +3,7 @@
  */
 package edu.mandeep.practice;
 
+import java.util.Arrays;
 
 /**
  * @author mandeep
@@ -11,10 +12,11 @@ package edu.mandeep.practice;
 public class KStringPartitions {
 	public static void main(String[] args){
 		//String str = "2-4A0r7-4k";
-		String str = "--a-a-a-a--";
-		
-		int k = 2;
+		//String str = "--a-a-a-a--";
+		String str = "2-4ADr7-4k";
+		int k = 3;
 		System.out.println(kGroups(str, k));
+	//System.out.println(LicenseKeyFormatting(str, k));
 	}
 
 	/**
@@ -28,7 +30,7 @@ public class KStringPartitions {
 		int length = 0;
 		for(int i = 0; i <str.length(); i++){
 			if(str.charAt(i) != '-'){
-				if(length == k){
+				if(length % k == 0  && length > 0){
 					result.append('-');
 					length = 0;
 				}
@@ -38,4 +40,21 @@ public class KStringPartitions {
 		}
 		return result.toString().toUpperCase();
 	}
+	
+	private static String LicenseKeyFormatting(String S, int K) 
+    {
+		S = S.replaceAll("[-]", "");
+	    S = S.toUpperCase();
+
+	    StringBuilder sb = new StringBuilder();
+	    sb.append(S);
+
+	    int i=sb.length()-K;
+	    while(i>0) {
+	        sb.insert(i, '-');
+	        i = i-K;
+	    }
+
+	    return sb.toString();
+    }
 }
