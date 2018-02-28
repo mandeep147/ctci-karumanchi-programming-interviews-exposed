@@ -1,5 +1,6 @@
 /**
- * Problem 2.8: given a circular linked list, return the node at the beginning of the loop
+ * Problem 2.8: given a circular linked list, 
+ * return the node at the beginning of the loop
  */
 package edu.mandeep.ctci.linkedlist;
 

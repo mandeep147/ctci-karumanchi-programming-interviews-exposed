@@ -34,7 +34,7 @@ public class RepeatedCharHash {
 	
 	public static void main(String[] args){
 		//String input = "JAVA";
-		String input = "code";
+		String input = "java";
 		repeatedChar(input);
 	}
 }

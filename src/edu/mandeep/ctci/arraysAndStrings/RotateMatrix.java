@@ -42,15 +42,17 @@ public class RotateMatrix {
 			int first = i;
 			int last = n - 1 - i;
 			for(int j = first; j < last; j++){
-				int temp = matrix[i][j];
-                // move values from right to top
-                matrix[i][j] = matrix[j][last];
-                // move values from bottom to right
-                matrix[j][last] = matrix[last][n-1-j];
-                // move values from left to bottom
-                matrix[last][n-1-j] = matrix[n-1-j][i];
-                // assign temp to left
-                matrix[n-1-j][i] = temp;
+				int offset = j - first;
+				int top = matrix[first][j];
+				
+				//move left to top
+				matrix[first][j] = matrix[last-offset][first];
+				//bottom to left
+				matrix[last-offset][first] = matrix[last][last-offset];
+				//right to bottom
+				matrix[last][last-offset] = matrix[j][last];
+				//top to right
+				matrix[j][last] = top;
 			}
 		}
 	}
