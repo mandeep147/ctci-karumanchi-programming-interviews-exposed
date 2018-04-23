@@ -51,8 +51,6 @@ public class BinaryTreeFromPostOrder {
 	private static TreeNode buildTree(int[] postorder, int postStart, int postEnd, int[] inorder, int inStart, int inEnd) {
 		if(postStart > postEnd || inStart > inEnd)
 			return null;
-		if(postStart > postEnd || inStart > inEnd)
-			return null;
 		
 		int root = postorder[postEnd];
 		TreeNode current = new TreeNode(root);
