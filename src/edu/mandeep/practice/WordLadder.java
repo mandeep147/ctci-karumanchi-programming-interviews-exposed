@@ -41,7 +41,7 @@ public class WordLadder {
 		  dictionary.add("WEB");
 		 
 		  String startWord = "CAT";
-		  String endWord = "DOG";
+		  String endWord = "COW";
 		  System.out.println("shortest length of path from "+startWord+" to "+endWord+" is "+ ladderLength(startWord, endWord, dictionary));
 	}
 	
