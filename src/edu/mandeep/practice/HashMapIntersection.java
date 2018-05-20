@@ -56,16 +56,16 @@ public class HashMapIntersection {
 	}
 
 	private static void findIntersection(HashMap<String, String> map, HashMap<String, String>[] input) {
-		int i1 = 0;
+		int count = 0;
 		for (int i = 0; i < input.length; i++) {
 			HashMap<String, String> curr = input[i];
 			if (curr.keySet().size() >= map.keySet().size()) {
-				for (Object key : map.keySet()) {
+				for (String key : map.keySet()) {
 					if (curr.containsKey(key)) {
-						i1++;
+						count++;
 					}
 				}
-				if (i1 >= map.size()){
+				if (count >= map.size()){
 					boolean flag = false;
 					for (String s : map.keySet()) {
 						if (map.get(s).equals(curr.get(s))) {
@@ -86,6 +86,7 @@ public class HashMapIntersection {
 		boolean flag = false;
 		for(int i = 0; i < input.length; i++){;
 			result.retainAll(input[i].keySet());
+//			System.out.println(result);
 			if(result.size() == map.size()){
 				for (String s : map.keySet()) {
 					if (map.get(s).equals(input[i].get(s))) {
